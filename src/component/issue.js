@@ -7,7 +7,7 @@ const Layout = styled.div`
   background: white;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
   padding: 8px;
-  margin: 8px 0;
+  margin: 12px 0;
 
   section {
     align-items: center;
