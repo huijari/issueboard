@@ -4,16 +4,21 @@ import styled from 'styled-components'
 import Issue from './issue'
 
 const Header = styled.h1`
-	margin: 8px;
+	margin: 8px 12px;
+`
+
+const Layout = styled.section`
+	margin: 0 12px;
+	max-width: 320px;
 `
 
 const Column = ({ name, issues }) => (
-  <section>
+  <Layout>
 		<Header>{name}</Header>
     {issues.map(({ number, title, labels }) => (
       <Issue number={number} title={title} labels={labels} />
     ))}
-  </section>
+  </Layout>
 )
 
 export default Column

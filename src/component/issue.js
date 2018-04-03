@@ -5,8 +5,9 @@ import Label from './label'
 
 const Layout = styled.div`
   background: white;
+  border-radius: 2px;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 8px;
+  padding: 8px 12px;
   margin: 12px 0;
 
   section {
