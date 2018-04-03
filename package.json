@@ -1,0 +1,39 @@
+{
+  "name": "issueboard",
+  "version": "1.0.0",
+  "description": "Github issue board, read-only",
+  "scripts": {
+    "start": "webpack-dev-server --mode=development",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huijari/issueboard.git"
+  },
+  "keywords": [
+    "issue",
+    "board",
+    "preact"
+  ],
+  "author": "Alexandre Cesar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huijari/issueboard/issues"
+  },
+  "homepage": "https://github.com/huijari/issueboard#readme",
+  "dependencies": {
+    "preact": "^8.2.7",
+    "preact-compat": "^3.18.0",
+    "styled-components": "^3.2.5"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-preact": "^1.1.0",
+    "uglifyjs-webpack-plugin": "^1.2.4",
+    "webpack": "^4.4.1",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
