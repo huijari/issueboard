@@ -2,11 +2,11 @@ import { h } from 'preact'
 import styled from 'styled-components'
 
 const Label = styled.span`
-	background: ${({ color }) => color};
+	background: #${({ color }) => color};
 	border-radius: 100%;
 	display: inline-block;
 	height: 12px;
-	margin: 0 4px;
+	margin: 0 2px;
 	width: 12px;
 `
 
