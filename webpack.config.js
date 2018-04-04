@@ -1,5 +1,6 @@
 const webpack = require('webpack')
 const path = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
   entry: './src',
@@ -32,6 +33,12 @@ module.exports = {
       }
     ]
   },
+
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'template.html'
+    })
+  ],
 
   resolve: {
     alias: {
