@@ -17,7 +17,17 @@ module.exports = {
         loader: 'babel-loader',
 
         options: {
-          presets: ['env', 'preact']
+          presets: [
+            [
+              'env',
+              {
+                targets: {
+                  browsers: 'last 2 chrome versions'
+                }
+              }
+            ],
+            'preact'
+          ]
         }
       }
     ]
