@@ -5,7 +5,6 @@ import { parseName } from '../service/repository'
 class RepositoryLocation extends Component {
 	onHashChange() {
 		const text = location.hash.substr(2)
-		if (text === '') return
 		this.props.onChange(parseName(text))	
 	}
 

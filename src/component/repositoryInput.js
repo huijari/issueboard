@@ -13,7 +13,6 @@ class RepositoryInput extends Component {
   }
 
   bubble(text) {
-    if (text === '') return
     this.props.onChange(parseName(text))
   }
 
