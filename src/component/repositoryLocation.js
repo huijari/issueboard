@@ -16,6 +16,7 @@ class RepositoryLocation extends Component {
 
 	componentDidMount() {
 		window.addEventListener('hashchange', this.onHashChange)
+		this.onHashChange()
 	}
 	componentWillUmount() {
 		window.removeEventListener('hashchange', this.onHashChange)
