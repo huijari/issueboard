@@ -2,6 +2,7 @@ import { h, Component } from 'preact'
 import linkstate from 'linkstate'
 
 import Input from './input'
+import { parseName } from '../service/repository'
 
 class RepositoryInput extends Component {
   onBlur() {
@@ -13,16 +14,7 @@ class RepositoryInput extends Component {
 
   bubble(text) {
     if (text === '') return
-
-    const parts = text.split('/')
-    if (parts.length != 2)
-      return void this.props.onChange({ error: 'invalid format' })
-
-    const [owner, name] = parts
-    if (owner === '') return void this.props.onChange({ error: 'empty owner' })
-    if (name === '') return void this.props.onChange({ error: 'empty name' })
-
-    this.props.onChange({ owner, name })
+    this.props.onChange(parseName(text))
   }
 
   constructor(props) {
