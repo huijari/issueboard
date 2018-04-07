@@ -24,7 +24,7 @@ class RepositoryInput extends Component {
     this.onKeyUp = this.onKeyUp.bind(this)
   }
 
-  render() {
+  render({ disabled }) {
     return (
       <Input
         label="Repository"
@@ -32,6 +32,7 @@ class RepositoryInput extends Component {
         onInput={linkstate(this, 'text')}
         onBlur={this.onBlur}
         onKeyUp={this.onKeyUp}
+        disabled={disabled}
       />
     )
   }
